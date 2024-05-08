@@ -43,10 +43,7 @@ public abstract class BaseDao {
 		}
 	}
 
-	/**
-	 * DBとの接続を解除します
-	 * @throws CampusException
-	 */
+	//接続全部切る
 	protected void close() throws MyException {
 		try {
 			if (con != null) {

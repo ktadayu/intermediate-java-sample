@@ -15,7 +15,7 @@ public class AccountDao extends BaseDao {
 
 	public Account doLogin(int loginId, String loginPassword)
 		throws MyException {
-			// スタッフ情報
+
 			Account loginUser = null;
 			try {
 				String sql = "SELECT * FROM account WHERE id = ? AND pass = ?";

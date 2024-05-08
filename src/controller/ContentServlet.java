@@ -41,21 +41,18 @@ public class ContentServlet extends HttpServlet {
 
 			request.setAttribute("contentsList", contentsList);
 
-			// 一覧画面をセット
+
 			nextPage = "/view/main.jsp";
 
 		} catch(MyException e) {
-			// 一覧処理中に例外が発生した場合はログイン画面に遷移させる
-			// 一覧が表示できない可能性があるため
+
 			String message = e.getMessage();
 			request.setAttribute("message", message);
 			request.setAttribute("error", "true");
 
-			// ログイン画面を表示する準備
 			nextPage = "login.jsp";
 		}
 
-		// 次の画面に遷移
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(nextPage);
 		requestDispatcher.forward(request, response);
 

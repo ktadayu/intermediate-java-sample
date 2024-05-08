@@ -75,15 +75,13 @@ public class PostServlet extends HttpServlet {
 
 		//リスト取得
 		try {
-			//記録されている書き込みの一覧を取得
 			ContentsDao contentsDao = new ContentsDao();
 			List<Contents> contentsList = contentsDao.findAllContents();
 
 			request.setAttribute("contentsList", contentsList);
 
 		} catch(MyException e) {
-			// 一覧処理中に例外が発生した場合はログイン画面に遷移させる
-			// 一覧が表示できない可能性があるため
+
 			message = e.getMessage();
 			request.setAttribute("message", message);
 			request.setAttribute("error", "true");

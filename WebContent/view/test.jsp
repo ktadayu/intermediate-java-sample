@@ -9,7 +9,7 @@
 <body>
 
 <!-- ブラウザの戻ると同じ -->
-<button type="submit" onclick="history.back()" >戻る</button>
+<button type="submit" onclick="history.back()" >戻る（削除機能未実装）</button>
 
 </body>
 </html>

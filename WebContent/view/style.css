@@ -5,7 +5,7 @@ body{
   color:#333
 }
 
-label, input, textarea, select{
+textarea, input{
   cursor: pointer;
 }
 
@@ -17,6 +17,10 @@ form-button{
 	text-align:center;
 	color:  rgb(193, 22, 85);
 	font-weight: bold;
+}
+
+label, select{
+  cursor: pointer;
 }
 
 /* section */
@@ -36,14 +40,12 @@ form-button{
   font-size: 40px;
   font-weight: bold;
   margin: 0 0 40px 0;
-
 }
 
 .section-button{
   margin-top: 40px;
   text-align: center;
 }
-
 
 .button{
   display: inline-block;
