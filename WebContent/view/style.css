@@ -33,6 +33,8 @@ label, select{
 .section.section2{
   background: #efefef;
   font-size:20px;
+  width:100vw;
+  height:100vh;
 }
 
 .section-headline{
@@ -151,6 +153,23 @@ label, select{
 .tabledata-text{
 	border-bottom: 2px solid  rgb(57, 56, 56);;
 }
+
+.pmiddle{
+  background:#ffff00;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+}
+
+
+
+/*
+真ん中の線
+*/
+
+
+
 
 
 

@@ -36,17 +36,17 @@
 
 
       <form action="<%= request.getContextPath() %>/LoginServlet" method="post" class="form">
-        <table class="form-table">
+        <table class="form-table" >
 		<tr>
-		<th class="table-headline">ID</th>
+		<th class="table-headline"><label for="id">ID</label></th>
 		<td class="table-data">
-              <input type="text" class="input" name="loginId" />
+              <input type="text" class="input" name="loginId" id="id"/>
             </td>
 		</tr>
 		<tr>
-			<th class="table-headline">Password</th>
+			<th class="table-headline"> <label for="pass"> Password </label></th>
 			<td class="table-data">
-              <input type="text" class="input" name="loginPassword" />
+              <input type="text" class="input" name="loginPassword" id="pass"/>
             </td>
 		</tr>
 		</table>
@@ -56,6 +56,15 @@
           </button>
         </div>
       </form>
-    </section>
+ </section>
+<!-- 登録を促す画面 -->
+<section class="section">
+		<div class="form-button">
+		<h4>または</h4>
+		<button type="submit" class="button button-signin" onclick="location.href='./signin.jsp'" >登録 </button>
+		</div>
+</section>
+
+   
   </body>
 </html>
