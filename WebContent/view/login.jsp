@@ -60,7 +60,7 @@
 <!-- 登録を促す画面 -->
 <section class="section">
 		<div class="form-button">
-		<h4>または</h4>
+		<h4>-----または-----</h4>
 		<button type="submit" class="button button-signin" onclick="location.href='./signin.jsp'" >登録 </button>
 		</div>
 </section>
